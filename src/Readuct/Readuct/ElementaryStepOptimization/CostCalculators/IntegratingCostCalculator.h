@@ -24,7 +24,7 @@ namespace CostBasedOptimization {
 /*!
  * ReactionPathCostCalculator relying on an integration along the b-spline.
  */
-class IntegratingCostCalculator : public ReactionPathCostCalculator {
+class SCINE_DLLEXPORT IntegratingCostCalculator : public ReactionPathCostCalculator {
  private:
   void calculateCostImpl(const Utils::BSplines::BSpline& spline, const EnergiesAndGradientsAlongSpline& energyValues) override;
   double getCostImpl() const override;

@@ -9,6 +9,7 @@
 #define READUCT_ELEMENTARYSTEPOPTIMIZATION_TYPECONVERTER_H
 
 #include <Eigen/Core>
+#include "MSVCCompatibility.h"
 
 // TODO: Improve documentation
 
@@ -25,7 +26,7 @@ namespace ElementaryStepOptimization {
 /*!
  * This class converts inner control points and eigen types.
  */
-class TypeConverter {
+class SCINE_DLLEXPORT TypeConverter {
  public:
   static Eigen::MatrixXd getInnerControlPointMatrix(const Utils::BSplines::BSpline& spline);
   static void setInnerControlPoints(Utils::BSplines::BSpline& spline, const Eigen::MatrixXd& m);

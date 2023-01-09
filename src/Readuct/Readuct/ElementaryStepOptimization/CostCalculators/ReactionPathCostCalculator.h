@@ -10,6 +10,7 @@
 
 #include <Eigen/Core>
 #include <memory>
+#include "../MSVCCompatibility.h"
 
 namespace Scine {
 namespace Utils {
@@ -35,7 +36,7 @@ namespace CostBasedOptimization {
  *
  * For more information, see the Ph.D. thesis of Alain Vaucher, DOI 10.3929/ethz-b-000265855.
  */
-class ReactionPathCostCalculator {
+class SCINE_DLLEXPORT ReactionPathCostCalculator {
  public:
   std::unique_ptr<ReactionPathCostCalculator> clone() const;
 

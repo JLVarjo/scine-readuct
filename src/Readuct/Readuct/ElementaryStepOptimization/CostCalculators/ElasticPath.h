@@ -23,7 +23,7 @@ namespace CostBasedOptimization {
  * Cost calculator for elasticity / tension.
  * Equivalent to the squared norm of the spline derivative at a given point.
  */
-class ElasticPath : public IntegratingCostCalculator {
+class SCINE_DLLEXPORT ElasticPath : public IntegratingCostCalculator {
   std::unique_ptr<ReactionPathCostCalculator> cloneImpl() const override;
   bool energiesRequiredImpl() const override;
   Utils::AutomaticDifferentiation::FirstND calculateCostContribution(const Utils::BSplines::BSpline& spline, double u,

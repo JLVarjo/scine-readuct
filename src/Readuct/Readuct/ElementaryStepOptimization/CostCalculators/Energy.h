@@ -22,7 +22,7 @@ namespace CostBasedOptimization {
 /*!
  * Cost calculator integrating the energy along the b-spline.
  */
-class Energy : public IntegratingCostCalculator {
+class SCINE_DLLEXPORT Energy : public IntegratingCostCalculator {
   Utils::AutomaticDifferentiation::FirstND calculateCostContribution(const Utils::BSplines::BSpline& spline, double u,
                                                                      double energy,
                                                                      const Utils::GradientCollection& gradients) const override;

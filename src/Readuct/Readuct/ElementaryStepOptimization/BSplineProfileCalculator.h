@@ -11,6 +11,7 @@
 #include <Utils/Typenames.h>
 #include <Eigen/Core>
 #include <vector>
+#include "MSVCCompatibility.h"
 
 // TODO: Improve documentation
 
@@ -33,7 +34,7 @@ namespace ElementaryStepOptimization {
 /*!
  * This class calculates the energies and forces for points along a bspline.
  */
-class BSplineProfileCalculator {
+class SCINE_DLLEXPORT BSplineProfileCalculator {
  public:
   explicit BSplineProfileCalculator(Core::Calculator& calculator);
 

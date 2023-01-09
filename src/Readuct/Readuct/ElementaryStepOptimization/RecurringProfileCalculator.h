@@ -30,7 +30,7 @@ class ProfileEnergies;
  * performed along an evolving BSpline, which permits optimization by saving the electronic densities along the path.
  * TODO: Allow for non-equidistant u values -> remove deltaU etc.
  */
-class RecurringProfileCalculator {
+class SCINE_DLLEXPORT RecurringProfileCalculator {
  public:
   explicit RecurringProfileCalculator(Core::Calculator& calculator, int numberEquidistantPoints);
 

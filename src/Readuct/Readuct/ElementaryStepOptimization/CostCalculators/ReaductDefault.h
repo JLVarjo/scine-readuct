@@ -25,7 +25,7 @@ namespace CostBasedOptimization {
 /*!
  * Default ReaDuct cost calculator.
  */
-class ReaductDefault : public ReactionPathCostCalculator {
+class SCINE_DLLEXPORT ReaductDefault : public ReactionPathCostCalculator {
  public:
   ReaductDefault();
 

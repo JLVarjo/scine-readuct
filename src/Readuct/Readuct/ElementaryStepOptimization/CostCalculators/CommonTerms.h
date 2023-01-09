@@ -10,6 +10,7 @@
 
 #include <Eigen/Core>
 #include <vector>
+#include "../MSVCCompatibility.h"
 
 // TODO: Improve documentation
 
@@ -38,7 +39,7 @@ namespace CostBasedOptimization {
  * Frequent terms in cost functions.
  * The functions return objects for the cost with derivatives of the inner control points.
  */
-class CommonTerms {
+class SCINE_DLLEXPORT CommonTerms {
  public:
   static Utils::AutomaticDifferentiation::FirstND squaredNormOfSplineDerivative(const Utils::BSplines::BSpline& spline,
                                                                                 double u);

@@ -46,6 +46,7 @@ set(READUCT_ELEMENTARY_STEP_OPTIMIZATION_FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/Readuct/ElementaryStepOptimization/EnergiesAndGradientsAlongSpline.h
   ${CMAKE_CURRENT_SOURCE_DIR}/Readuct/ElementaryStepOptimization/BSplineProfileCalculator.h
   ${CMAKE_CURRENT_SOURCE_DIR}/Readuct/ElementaryStepOptimization/BSplineProfileCalculator.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/Readuct/ElementaryStepOptimization/MSVCCompatibility.h
 )
 set(READUCT_PYTHON_FILES
   ${CMAKE_CURRENT_SOURCE_DIR}/Python/PythonModule.cpp
